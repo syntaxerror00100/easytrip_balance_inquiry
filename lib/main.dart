@@ -96,7 +96,10 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         Text(
           '$_balance',
-          style: Theme.of(context).textTheme.headline3,
+          style: Theme.of(context)
+              .textTheme
+              .headline3
+              .copyWith(color: Colors.redAccent),
         ),
       ],
     );
